@@ -1,125 +1,109 @@
 <!DOCTYPE html>
-<html lang="en-ca">
-
+<html lang="en">
 <head>
-  <!-- Set the page title -->
-  <title>Final Exam</title>
-
-  <!-- Set the charset we're using to UTF-8 -->
-  <meta charset="utf-8" />
-
-  <!-- Set the screens default zoom / scale to 1 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Specifies the document mode for Internet Explorer -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <!-- Set the CSS Reset File -->
-  <link rel="stylesheet" href="./reset.css" />
-
-  <!-- Set some basic CSS for the header and body -->
-  <link rel="stylesheet" href="./style.css" />
-
-  <!-- Set the Favicon  -->
-  <link rel="icon" href="./images/favicon/window.svg" type="image/svg+xml" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <!--
-
-    FINAL EXAM CONTENT
-
-    ALL OF THE CONTENT BELOW HAS BEEN PROVIDED FOR YOU SO
-    THAT YOU CAN FOCUS ON THE HTML STRUCTURE AND SEMANTICS.
-
-    ---------------------------------------------
-
-    # HEADER SECTION
-
-    Site Header (hidden text - not visible on screen)
-    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-light.svg)
-    Contact Us
-
-    # MAIN SECTION
-
-    ## HERO SECTION
-
-    Amy's Web Development Agency (hidden text - not visible on screen)
-    Web Development Solutions Made Easy
-    Crafting Digital Dreams: Transforming Code into Captivating Experiences - Your Vision, My Expertise.
-
-
-    ## SKILLS SECTION
-
-    My Skills (hidden text - not visible on screen)
-    Web Development
-    UI/UX
-    CSS
-    JavaScript
-    HTML
-    GitHub
-
-    ## ABOUT ME SECTION
-
-    About me (hidden text - not visible on screen)
-    Picture of Amy's in business atire with a pink background (<- image alt text <- ./images/about/about.jpg)
-
-    Hey, I'm Amy. Are you ready to level up your web project?
-
-    I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
-
-    Contact me
-
-    ## MY WORK SECTION
-
-    My Work
-
-    Screenshot of Tutorial Exercise 03 (<- image alt text <- ./images/work/work-1.png)
-    Tutorial Exercise 03
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 05 (<- image alt text <- ./images/work/work-2.png)
-    Tutorial Exercise 05
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 07 (<- image alt text <- ./images/work/work-3.png)
-    Tutorial Exercise 07
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 09 (<- image alt text <- ./images/work/work-4.png)
-    Tutorial Exercise 09
-    HTML
-    CSS
-    JavaScript
-
-    Book a call with me
-
-    ## CONTACT ME SECTION
-
-    Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!"
-
-    Contact Me
-
-    ## FOOTER SECTION
-
-    Site Footer (hidden text - not visible on screen)
-
-    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-dark.svg)
-    © 2023 Amy's Web Development Agency
-
-  -->
-
-  <main>
-    <div class="page-container">
-      <h1>Complete Your Final Exam Here</h1>
-    </div>
-  </main>
-
-
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="./images/logo/logo-light.svg" alt="logo" height="40">
+        </div>
+        <nav>
+            <a class="contact" href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h1>Web Development Solutions Made Easy</h1>
+            <p>Crafting Digital Dreams: Transforming Code into Captivating Expressions - Your Vision, My Expertise.</p>
+            <div class="skills">
+                <!-- Skills List -->
+                <div class="item1">Web Development</div>
+                <div class="item2">UI/UX</div>
+                <div class="item3">CSS</div>
+                <div class="item4">JavaScript</div>
+                <div class="item5">HTML</div>
+                <div class="item6">GitHub</div>
+            </div>
+        </section>
+        
+        <!-- About Me Section -->
+        <section class="about-me">
+            <img src="./images/about/about.jpg" alt="Amy">
+            <div>
+                <h2>Hey, I'm Amy. Are you ready to level up your web project?</h2>
+                <p>I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is always to build products that provide pixel-perfect, performant experiences.</p>
+                <a href="#contact" class="contact-me-button">Contact me</a>
+            </div>
+        </section>
+        
+        <!-- My Work Section -->
+        <section class="my-work">
+            <h2>My Work</h2>
+            <!-- Project Cards Container -->
+            <div class="card-container">
+                <!-- Project Card 1 -->
+                <div class="card card1">
+                    <img src="./images/work/work-1.png" alt="Tut 03" height="400">
+                    <h3>Tutorial Exercise 03</h3>
+                    <ul> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="card card2">
+                    <img src="./images/work/work-2.png" alt="Tut 05" height="20" width="30" >
+                    <h3>Tutorial Exercise 05</h3>
+                    <ul> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="card card3">
+                    <img src="./images/work/work-3.png" alt="Tut 07" height="400">
+                    <h3>Tutorial Exercise 07</h3>
+                    <ul> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="card card4">
+                    <img src="./images/work/work-4.png" alt="Tut 09" height="400">
+                    <h3>Tutorial Exercise 09</h3>
+                    <ul> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+      
+        <!-- Contact Me Section -->
+        <section class="contact-me" id="contact">
+            <h2>Book a call with me</h2>
+            <p>Excited to chat? Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!</p>
+            <a class="pp" href="#contact">Contact Me</a>
+            <!-- Insert contact form here -->
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2023 Amy's Web Development Agency</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,69 +1,258 @@
-/*
- * CSS File for the solution
- * Final Exam
- * You got this!
- */
-
-/*
- * COLOUR PALETTE
- *
- * YOU DO NOT NEED TO USE THESE COLOURS, BUT YOU CAN IF YOU WANT TO
- *
- * #cdb4db - Lavender Purple
- * #ffc8dd - Pink
- * #ffafcc - Light Pink
- * #bde0fe - Light Blue
- * #a2d2ff - Light Blue
- * #0c0a3e - Dark Purple
- * #797979 - Grey
- *
- * https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff
- */
-
-/*
- * FOR YOUR DESKTOP VIEWPORT I WOULD RECOMMEND THE FOLLOWING MEDIA QUERY
- *
- * @media screen and (min-width: 800px) {
- *    ... your styles here ...
- * }
- */
-
- html {
-  font-size: 1.0rem;
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Global styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7ead7;
+  padding: 20px;
+  text-align: center;
+}
 
+h1 {
+  font-size: 40px;
+}
+
+p {
+  color: #c0b9af;
+  font-weight: bold;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7ead7;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  border-radius: 20%;
+  height: 60px;
+  width: 60px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+}
+
+/* Card styles */
+.card {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Buttons and links */
+.pp {
+  color: white;
+  background-color: #000000;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.contact {
+  font-size: large;
+  color: white;
+  border-radius: 14px;
+  height: 60px;
+  width: auto;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-left: 70px;
+}
+
+.contact-me-button {
+  display: inline-block;
+  background-color: #ffafcc;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.contact-me-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+}
+
+/* Skills section styles */
+.skills {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items horizontally */
+  gap: 10px; /* Add space between items */
+}
+
+/* General style for all skill items */
+.skills div {
+  border-radius: 10px;
+  padding: 1.5rem; /* Adjust the padding for smaller size */
+  margin: 0.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: large;
+  flex-grow: 1; /* Items will grow to fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+/* Individual skill item styles */
+.item1 { background-color: #cdb4db; max-width: 600px; height: 300px; }
+.item2 { background-color: #ffc8dd; max-width: 300px; height: 120px;}
+.item3 { background-color: #ffafcc; max-width: 300px; height: 120px; }
+.item4 { background-color: #bde0fe; max-width: 600px; height: 120px; }
+.item5 { background-color: #a2d2ff; max-width: 700px; height: 120px; }
+.item6 { background-color: #cdb4db; max-width: 300px; height: 120px;  }
+
+/* About Me section styles */
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 2rem;
+  margin-bottom: 6rem;
+}
+
+.about-me img {
+  border-radius: 10%;
+  max-width: 50%; /* Adjust the image width as needed */
+  height: auto; /* Allow the height to adjust proportionally */
+}
+
+.about-me p {
+  flex: 1; /* Allow the text to take up the remaining space */
+  color: #000000;
+  font-size: 15px;
+}
+
+.about-me div {
+  flex: 1;
+  padding: 0 20px;
+}
+
+/* My Work section styles */
+.my-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 400px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the entire section */
+}
+
+.card {
+  flex-basis: calc(50% - 20px); /* Each card takes 50% width with some gap */
+  box-sizing: border-box;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 1rem;
+  margin-right: 20px; /* Add space between the cards horizontally */
+  margin-bottom: 20px; /* Add space between the rows */
+}
+
+.card:nth-child(2n) {
+  margin-right: 0;
+}
+
+.card img {
+  border: 5px solid #000000;
+}
+
+.card ul {
+  display: flex; /* Display the list items horizontally */
+  gap: 10px; /* Add a gap between list items */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove the default list style */
+}
+
+.card ul li {
+  background-color: #e7aac8; /* Background color for each list item */
+  font-size: 13px; /* Adjust the font size to make it smaller */
+  font-weight: bold;
+  padding: 1px 6px; /* Adjust the padding to make it smaller */
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+/* Contact Me section styles */
+.contact-me {
+  text-align: left;
+  background-color: #cdb4db;
+  padding: 1rem; /* Adjust the padding as needed */
+  border-radius: 10px;
+  width: 950px; /* Adjust the width as needed */
+  margin-right: auto; /* Center the element horizontally */
+  margin-left: auto; /* Center the element horizontally */
+}
+
+.contact-me p {
+  color: black;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 5px;
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
   background-color: #f7ead7;
 }
 
-/*
- * SR-ONLY
- */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
- }
-
-
-/*
- * SHARED STYLES
- */
-
-.page-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1.0rem;
+footer::after {
+  content: "";
+  display: block;
+  border-top: 1px solid #303030;
+  margin-top: 10px;
 }
 
-/*
- * ADD YOUR STYLES HERE
- */
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .my-work {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
